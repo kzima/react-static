@@ -1,7 +1,7 @@
 import path from 'path'
 import Server from './Server'
 import snapshots from './snapshots';
-import { move } from './Writer';
+import { move } from './writer';
 
 const pkg = require(path.join(process.cwd(), 'package.json'));
 const paths = pkg.static.paths || ['/'];

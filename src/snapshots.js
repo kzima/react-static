@@ -1,7 +1,7 @@
 import path from 'path';
 import url from 'url'
 import jsdom from 'jsdom'
-import { write } from './Writer'
+import { write } from './writer'
 
 const snap = ({baseUrl, baseDir}) => {
 	const { protocol, host, path } = url.parse(baseUrl);
