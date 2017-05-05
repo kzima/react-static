@@ -1,10 +1,10 @@
-# React Static
+# React Static Generator
 
 Static file generator that can be plugged into any react project. 
 A lightweight solution for single page apps like blogs, landing pages or mobile apps rendered in react-native webview. 
 It prerenders the content to be SEO friendly and to load faster for the user. 
 
-React Static is great for small projects with 1-10 pages. For larger apps like e-commerce I would still recommend to use Universal Rendering. 
+React Static Generator is great for small projects with 1-10 pages. For larger apps like e-commerce I would still recommend to use Universal Rendering. 
 
 This project is heavily inspired by [React Snapshot](https://github.com/geelen/react-snapshot) and [Webpack Static Site Generator Plugin](https://github.com/markdalgleish/static-site-generator-webpack-plugin).
 
@@ -12,7 +12,7 @@ This project is heavily inspired by [React Snapshot](https://github.com/geelen/r
 
 Say you have a landing page with 2 routes: "/" and "/page1".  
 You then build your project for production using webpack as usual.  
-Once your code is minified and exported to `dist` folder you trigger `yarn static`.  
+Once your code is minified and exported to `dist` folder you trigger `yarn build && react-static`.  
 React-static will spin a new node server with jsdom browser.  
 It will then look up your package.json config for the list of routes that you want to prerender.  
 Lastly, it will open each page with `user-agent: Node` and make the react-static to use `ReactDOMServer.renderToStaticMarkup` instead of `ReactDOMServer.render`.  
@@ -24,11 +24,12 @@ After that you have a dist folder ready to be deployed to netlify or surge.sh an
 
 ## Usage
 
-- `yarn add react-static --dev`
+- `yarn add react-static-generator --dev`
 - add config to your package.json:
 ```
 "static": {
-  "paths": ["/", "/page1"]
+  "paths": ["/", "/page1"], 
+  "outputPath": "build"
 },
 ```
 - open your package.json and change `"scripts"` from
@@ -52,10 +53,10 @@ After that you have a dist folder ready to be deployed to netlify or surge.sh an
 ## Configuration
 
 ```
-"paths" - either an array of paths, i.e. ["/", "/page1"] or a path to a JSON file i.e. custom.json (*defaults to ["/"]) ;
-"port" - you might specify port if you run into conflicts on your machine (*defaults to "2999");
-"publicPath" - a virtual path in the url, i.e. "/static" (*defaults to "/");
-"baseDir": - a path to your output folder, i.e. "build","dist"(defaults to "dist")
+"paths" - either an array of paths, i.e. ["/", "/page1"] or a path to a JSON file i.e. custom.json (*defaults to ["/"])
+"port" - you might specify port if you run into conflicts on your machine (*defaults to "2999")
+"publicPath" - a virtual path in the url, i.e. "/static" (*defaults to "/")
+"outputPath": - a path to your output folder, i.e. "build","dist"(defaults to "dist")
 ```
 
 ## The Alternatives

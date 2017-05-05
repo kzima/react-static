@@ -1,6 +1,6 @@
 {
-  "name": "react-static",
-  "version": "0.0.1",
+  "name": "react-static-generator",
+  "version": "0.1.0",
   "description": "",
   "main": "lib/index.js",
   "bin": {
@@ -28,7 +28,8 @@
     "express-history-api-fallback": "^2.1.0"
   },
   "static": {
-    "paths": ["/", "/page1"]
+    "paths": ["/", "/login"],
+    "outputPath": "build"
   },
   "babel": {
     "presets": [
@@ -42,6 +43,7 @@
   "keywords": [
     "react",
     "react-static",
+    "react-static-generator", 
     "create-react-app",
     "snapshot",
     "static-site-generator",
