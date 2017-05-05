@@ -2,7 +2,7 @@
 
 Static file generator that can be plugged into any react project. 
 A lightweight solution for single page apps like blogs, landing pages or mobile apps rendered in react-native webview. 
-It prerenders the content to be SEO friendly and load faster for the user. 
+It prerenders the content to be SEO friendly and to load faster for the user. 
 
 React Static is great for small projects with 1-10 pages. For larger apps like e-commerce I would still recommend to use Universal Rendering. 
 
