@@ -59,12 +59,17 @@ After that you have a dist folder ready to be deployed to netlify or surge.sh an
 "outputPath": - a path to your output folder, i.e. "build","dist"(defaults to "dist")
 ```
 
-## Try it
+## Try it yourself
 
 [run example app](https://github.com/kzima/react-static/tree/master/example)
 - `yarn install`
 - `yarn build`
 - serve build folder with `http-server`
+
+## Create-react-app demo
+
+[https://magician-brian-21017.netlify.com](https://magician-brian-21017.netlify.com)
+
 
 ## The Alternatives
 
