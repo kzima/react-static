@@ -41,7 +41,7 @@ After that you have a dist folder ready to be deployed to netlify or surge.sh an
 - Change your usage of `react-dom`:
 ```diff
 - import ReactDOM from 'react-dom';
-+ import { render } from 'react-snapshot';
++ import { render } from 'react-static-generator';
 
 - ReactDOM.render(
 + render(
@@ -58,6 +58,13 @@ After that you have a dist folder ready to be deployed to netlify or surge.sh an
 "publicPath" - a virtual path in the url, i.e. "/static" (*defaults to "/")
 "outputPath": - a path to your output folder, i.e. "build","dist"(defaults to "dist")
 ```
+
+## Try it
+
+[run example app](https://github.com/kzima/react-static/tree/master/example)
+- `yarn install`
+- `yarn build`
+- serve build folder with `http-server`
 
 ## The Alternatives
 
