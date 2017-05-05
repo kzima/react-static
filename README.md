@@ -52,11 +52,10 @@ After that you have a dist folder ready to be deployed to netlify or surge.sh an
 ## Configuration
 
 ```
-"paths" - either an array of paths, i.e. `["/", "/page1"]` or a path to a JSON file i.e. `custom.json` (*defaults to `["/"]`) ;
-"port" - you might specify port if you run into conflicts on your machine (*defaults to `2999`);
-"publicPath" - a virtual path in the url, i.e. `/static` (*defaults to `/`);
-"baseDir": - a path to your output folder, i.e. "build",`dist`(defaults to `dist`)
-},
+"paths" - either an array of paths, i.e. ["/", "/page1"] or a path to a JSON file i.e. custom.json (*defaults to ["/"]) ;
+"port" - you might specify port if you run into conflicts on your machine (*defaults to "2999");
+"publicPath" - a virtual path in the url, i.e. "/static" (*defaults to "/");
+"baseDir": - a path to your output folder, i.e. "build","dist"(defaults to "dist")
 ```
 
 ## The Alternatives
