@@ -35,7 +35,7 @@ After that you have a dist folder ready to be deployed to netlify or surge.sh an
 - open your package.json and change `"scripts"` from
 ```diff
 - "build": "react-scripts build"
-+ "build": "react-scripts build && react-static"
++ "build": "react-scripts build && react-static-generator"
 ```
 
 - Change your usage of `react-dom`:
