@@ -16,13 +16,13 @@ This project is heavily inspired by [React Snapshot](https://github.com/geelen/r
 
 # How it works?
 
-Say you have a landing page with 2 routes: "/" and "/page1".  
-You then build your project for production using webpack as usual.  
-Once your code is minified and exported to `dist` folder you trigger `yarn build && react-static`.  
-React-static will spin a new node server with jsdom browser.  
-It will then look up your package.json config for the list of routes that you want to prerender.  
-Lastly, it will open each page with `user-agent: Node` and make the react-static to use `ReactDOMServer.renderToStaticMarkup` instead of `ReactDOMServer.render`.  
-Each page is then saved to it's corresponding folder:  
+- Say you have a landing page with 2 routes: "/" and "/page1".  
+- You then build your project for production using webpack as usual.  
+- Once your code is minified and exported to `dist` folder you trigger `yarn build && react-static`.  
+- React-static will spin a new node server with jsdom browser.  
+- It will then look up your package.json config for the list of routes that you want to prerender.  
+- Lastly, it will open each page with `user-agent: Node` and make the react-static to use `ReactDOMServer.renderToStaticMarkup` instead of `ReactDOMServer.render`.  
+- Each page is then saved to it's corresponding folder:  
 "/" -> index.html  
 "/page1" -> page1/index.html  
 
@@ -67,10 +67,12 @@ After that you have a dist folder ready to be deployed to netlify or surge.sh an
 
 ## Try it yourself
 
-[run example app](https://github.com/kzima/react-static/tree/master/example)
+- `cd example` 
 - `yarn install`
 - `yarn build`
 - serve build folder with `http-server`
+
+See example's [source code](https://github.com/kzima/react-static/tree/master/example).
 
 ## Create-react-app demo
 
