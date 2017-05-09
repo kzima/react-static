@@ -1,12 +1,18 @@
 # React Static Generator
 
 Static file generator that can be plugged into any react project. 
-A lightweight solution for single page apps like blogs, landing pages or mobile apps rendered in react-native webview. 
-It prerenders the content to be SEO friendly and to load faster for the user. 
+A lightweight solution for single page apps like blogs, landing pages or mobile web apps. 
 
 React Static Generator is great for small projects with 1-10 pages. For larger apps like e-commerce I would still recommend to use Universal Rendering. 
 
 This project is heavily inspired by [React Snapshot](https://github.com/geelen/react-snapshot) and [Webpack Static Site Generator Plugin](https://github.com/markdalgleish/static-site-generator-webpack-plugin).
+
+# Benefits
+
+- static content is SEO friendly 
+- better User Experience
+- no need for Express server
+- can be hosted on CDN like netlify or surge
 
 # How it works?
 
@@ -53,9 +59,9 @@ After that you have a dist folder ready to be deployed to netlify or surge.sh an
 ## Configuration
 
 ```
-"paths" - either an array of paths, i.e. ["/", "/page1"] or a path to a JSON file i.e. custom.json (*defaults to ["/"])
-"port" - you might specify port if you run into conflicts on your machine (*defaults to "2999")
-"publicPath" - a virtual path in the url, i.e. "/static" (*defaults to "/")
+"paths" - either an array of paths, i.e. ["/", "/page1"] or a path to a JSON file i.e. custom.json (defaults to ["/"])
+"port" - you might specify port if you run into conflicts on your machine (defaults to "2999")
+"publicPath" - a virtual path in the url, i.e. "/static" (defaults to "/")
 "outputPath": - a path to your output folder, i.e. "build","dist"(defaults to "dist")
 ```
 
