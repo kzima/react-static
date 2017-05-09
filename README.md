@@ -1,7 +1,7 @@
 # React Static Generator
 
-Static file generator that can be plugged into any react project. 
-A lightweight solution for single page apps like blogs, landing pages or mobile web apps. 
+Static file generator that can be plugged into any react project.  
+It is a lightweight solution for single page apps like blogs, landing pages or mobile web apps. 
 
 React Static Generator is great for small projects with 1-10 pages. For larger apps like e-commerce I would still recommend to use Universal Rendering. 
 
