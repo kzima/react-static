@@ -2,5 +2,5 @@
 
 ```
 yarn install
-http-server (see [repo](https://github.com/indexzero/http-server)
+http-server see [repo](https://github.com/indexzero/http-server)
 ```
